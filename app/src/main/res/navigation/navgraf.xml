@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraf"
+    app:startDestination="@id/Loginfragment">
+
+    <fragment
+        android:id="@+id/Loginfragment"
+        android:name="com.example.chat.Loginfragment"
+        android:label="fragment_loginfragment"
+        tools:layout="@layout/fragment_loginfragment" >
+        <action
+            android:id="@+id/action_Loginfragment_to_chatfragment"
+            app:destination="@id/chatfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatfragment"
+        android:name="com.example.chat.chatfragment"
+        android:label="fragment_chatfragment"
+        tools:layout="@layout/fragment_chatfragment" />
+</navigation>
